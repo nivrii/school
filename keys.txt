@@ -1,0 +1,25 @@
+You already have credentials that are suitable for this purpose
+
+Don't want to use one of these existing API keys? Create a new API key
+
+Android key (auto created by Firebase)
+Key	
+AIzaSyCEJeEzh1tBaxapohKXVlWv7P9fmV9Uxzk
+Restriction	
+None
+Creation date	
+Nov 5, 2019, 6:31:06 AM
+Server key (auto created by Firebase)
+Key	
+AIzaSyAiF8HupwBOF-BjWRG32MAltZIJuHRYR40
+Restriction	
+None
+Creation date	
+Nov 5, 2019, 6:29:24 AM
+Browser key (auto created by Firebase)
+Key	
+AIzaSyCtGf2eoIuWpI8IRxevwn8kRVteKKs18Wk
+Restriction	
+None
+Creation date	
+Nov 5, 2019, 6:29:23 AM

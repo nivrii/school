@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "509808477662",
+    "firebase_url": "https://school-bus-location-tracking.firebaseio.com",
+    "project_id": "school-bus-location-tracking",
+    "storage_bucket": "school-bus-location-tracking.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:509808477662:android:323a1acdb655b68f7bc94f",
+        "android_client_info": {
+          "package_name": "com.example.SchoolBusLocationTracking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "509808477662-dkfnrb314jvrtgscmen4f06bhf061o32.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEJeEzh1tBaxapohKXVlWv7P9fmV9Uxzk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "509808477662-dkfnrb314jvrtgscmen4f06bhf061o32.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

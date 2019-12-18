@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/darkcarbon"
+    tools:context=".DashboardActivity">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="406dp"
+        android:layout_height="132dp"
+        android:layout_marginTop="44dp"
+        android:background="@color/common_google_signin_btn_text_light_pressed"
+        android:text="@string/welcome_to_the_school_bus_location_tracking_app"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/profiler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/trackSchool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/mybutton"
+        android:onClick="onButtonClick"
+        android:text="@string/track_school_bus"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMap"
+        app:layout_constraintVertical_bias="0.89" />
+
+
+    <ImageView
+        android:id="@+id/contact"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toTopOf="@+id/map"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.038"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profiler"
+        app:layout_constraintVertical_bias="0.502"
+        app:srcCompat="@mipmap/ic_contact_round" />
+
+    <ImageView
+        android:id="@+id/profiler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toTopOf="@+id/contact"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome"
+        app:layout_constraintVertical_bias="0.162"
+        app:srcCompat="@mipmap/ic_profile_round" />
+
+    <ImageView
+        android:id="@+id/map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toTopOf="@+id/trackSchool"
+        app:layout_constraintEnd_toStartOf="@+id/btnMap"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contact"
+        app:layout_constraintVertical_bias="0.434"
+        app:srcCompat="@mipmap/ic_track_round" />
+
+    <Button
+        android:id="@+id/btnProf"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:background="@drawable/mybutton"
+        android:onClick="onButtonClick"
+        android:text="@string/edit_your_profile"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/btnMess"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/profiler"
+        app:layout_constraintTop_toBottomOf="@+id/welcome" />
+
+    <Button
+        android:id="@+id/btnMap"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:background="@drawable/mybutton"
+        android:onClick="onButtonClick"
+        android:text="@string/check_saved_trips"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/trackSchool"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/map"
+        app:layout_constraintTop_toBottomOf="@+id/btnMess"
+        app:layout_constraintVertical_bias="0.761" />
+
+    <Button
+        android:id="@+id/btnMess"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:background="@drawable/mybutton"
+        android:onClick="onButtonClick"
+        android:text="@string/contact_uss"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/btnMap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/contact"
+        app:layout_constraintTop_toBottomOf="@+id/btnProf"
+        app:layout_constraintVertical_bias="0.418" />
+
+
+</android.support.constraint.ConstraintLayout>

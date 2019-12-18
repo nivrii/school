@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blackspace"
+    tools:context=".TripActivity">
+
+    <EditText
+        android:id="@+id/pickUp"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/blackplain"
+        android:hint="@string/enter_a_pick_up_time"
+        android:importantForAutofill="no"
+        android:inputType=""
+        android:textAlignment="center"
+        android:textColor="#FCF7F7"
+        android:textColorHighlight="#FCF7F7"
+        android:textColorHint="#F7F4F4"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Route" />
+
+    <EditText
+        android:id="@+id/Route"
+        android:layout_width="406dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/blackplain"
+        android:hint="@string/enter_route"
+        android:importantForAutofill="no"
+        android:inputType=""
+        android:textAlignment="center"
+        android:textColor="#FCF7F7"
+        android:textColorHighlight="#FCF7F7"
+        android:textColorHint="#F7F4F4"
+        app:layout_constraintBottom_toTopOf="@+id/pickUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="420dp"
+        android:layout_height="203dp"
+        android:layout_marginTop="50dp"
+
+        android:layout_marginBottom="25dp"
+        android:background="@color/back_background"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toTopOf="@+id/Route"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_track_round"
+        tools:targetApi="o" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="164dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="91dp"
+        android:background="@drawable/mybutton"
+        android:textColor="#ffffff"
+        android:text="@string/submit"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pickUp" />
+</android.support.constraint.ConstraintLayout>

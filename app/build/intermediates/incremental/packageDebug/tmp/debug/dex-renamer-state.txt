@@ -1,0 +1,4 @@
+#Tue Dec 17 19:04:55 EAT 2019
+base.0=C\:\\Users\\Administrator\\AndroidStudioProjects\\Nivri-20191107T105741Z-001\\Nivri\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

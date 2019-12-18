@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_04"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".RegistrationActivity">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="134dp"
+        android:background="#B9000000"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="5dp"
+        tools:context=".RegistrationActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:background="@color/common_google_signin_btn_text_dark_focused"
+            android:padding="5dp"
+            android:text="@string/register_new_account"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="20dp"
+            android:autofillHints="yes"
+            android:background="@color/common_google_signin_btn_text_light_default"
+            android:drawableStart="@drawable/ic_action_name"
+            android:drawableLeft="@drawable/ic_action_name"
+            android:hint="@string/my_email"
+            android:inputType="textWebEmailAddress|text"
+            android:textColor="#FCF7F7"
+            android:textColorHighlight="#FCF7F7"
+            android:textColorHint="#F7F4F4"
+            tools:targetApi="o" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/common_google_signin_btn_text_light_default"
+            android:drawableStart="@drawable/ic_password"
+            android:drawableLeft="@drawable/ic_password"
+            android:hint="@string/my_password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:textColor="#FCF7F7"
+            android:textColorHighlight="#FCF7F7"
+            android:textColorHint="#FCFFFFFF" />
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/mybutton"
+            android:fontFamily="monospace"
+            android:text="@string/my_Reg"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/regTxt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/common_google_signin_btn_text_light_default"
+            android:text="@string/already_have_an_account_sign_in_here"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/signIn"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/mybutton"
+            android:text="@string/sign_in"
+            android:textAlignment="center"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

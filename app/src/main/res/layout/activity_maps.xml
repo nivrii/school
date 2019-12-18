@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:background="#B3E5FC">
+
+        <TextView
+            android:id="@+id/title_text_view"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/zoom_into_an_area_to_see_which_bus_lines_can_take_you_there_n_click_on_the_marker_for_line_numbers"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textColor="#757575"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:paddingTop="8dp"
+                android:textAlignment="center"
+                android:text="@string/feedback"
+                android:textSize="14sp"
+                android:textColor="#757575" />
+
+            <Button
+                android:id="@+id/next_button"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginRight="4dp"
+                android:textSize="12sp"
+                android:onClick="sendFeedback"
+                android:text="@string/tell_me"
+                tools:targetApi="donut" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <fragment
+
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:context="com.example.android.mymapapp1.MapsActivity" />
+
+</LinearLayout>
